@@ -15,6 +15,8 @@
 <body>
     <header>
         <!-- top navbar, takes half the width -->
+        <!-- fix this lol -->
+        <img src="images/smash-logo.png" height="40">
         <ul class="navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#">Schedule</a></li>
@@ -23,16 +25,16 @@
         </ul>
     </header>
 
-    <section>
+    <section top="title-section">
         <!-- image with text beside -->
-         <div class="top-banner">
-            <div class="title-container">
-                <h1>Super Smash Bros. Ultimate Tournament</h1>
-                <p class="subtitle">November 19, 2026</p>
-            </div>
-            <!-- TODO: find image -->
-            <img src="images/neon.png" alt="neon placeholder" width="50%" />
-         </div>
+        <div class="top-banner">
+        <div class="title-container">
+            <h1>Super Smash Bros. Ultimate Tournament</h1>
+            <p class="subtitle">November 19, 2026</p>
+        </div>
+        <!-- TODO: find image -->
+        <img src="images/neon.png" alt="neon placeholder" width="50%" />
+        </div>
     </section>
     <main>
         <section id="main-section">
@@ -138,6 +140,11 @@
         </details>
         <hr>
         <details>
+            <summary>Are there prizes?</summary>
+            <p>No lol, this is entirely for fun, no pressure</p>
+        </details>
+        <hr>
+        <details>
             <summary>What else is there at the event?</summary>
             <p>
                 There are other things to do, besides playing Smash:
@@ -185,6 +192,10 @@
     <section>
         <h2>Contact Us</h2>
         <p>If you have any questions or concerns, please reach out to us at <a href="mailto:someone@example.com">this email</a>.</p>
+        <p>The organizers:</p>
+        <ul>
+            <li>John Doe</li>
+        </ul>
 
     <section id="signup-form">
         <h2>Sign Up</h2>
@@ -232,7 +243,7 @@
                 </fieldset>
             </div>
 
-            <input type="submit" value="Sign Up">
+            <input type="submit" value="Sign Up" class="submit-button">
         </form>
     </section>
 
