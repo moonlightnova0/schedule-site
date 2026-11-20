@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oregano:ital@0;1&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
     <link href="reset.css" rel="stylesheet">
     <link href="schedule.css" rel="stylesheet" />
     <!-- favicon -->
@@ -14,15 +17,16 @@
 </head>
 <body>
     <header>
-        <!-- top navbar, takes half the width -->
-        <!-- fix this lol -->
-        <img src="images/smash-logo.png" height="40">
-        <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#signup-form">Sign Up</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
+        <nav>
+            <!-- top navbar, takes half the width -->
+            <ul class="navbar">
+                <li class="logo"><img src="images/smash-logo.webp" height="40" alt="white smash bros. logo"></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#signup-form">Sign Up</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>    
     </header>
 
     <section top="title-section">
@@ -33,221 +37,249 @@
             <p class="subtitle">November 19, 2026</p>
         </div>
         <!-- TODO: find image -->
-        <img src="images/neon.png" alt="neon placeholder" width="50%" />
+        <img src="images/title-image.jfif" alt="a photo of a smash ultimate tournament" width="50%" style="border: 3px solid rgb(123, 10, 10); box-sizing: border-box;"/>
         </div>
     </section>
     <main>
         <section id="main-section">
-            <h2>Schedule</h2>
             <!-- table with schedule -->
-            <table>
-                <thead>
-                    <th><b>time</b></th>
-                    <td><b>event</b></td>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>9:10 AM</td>
-                        <td>School Starts</td>
-                    </tr>
-                    <tr>
-                        <td>12:50 PM - 1:50 PM</td>
-                        <td>Lunch</td>
-                    </tr>
-                    <tr>
-                        <td>3:10 PM</td>
-                        <td>Tournament Starts</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Round Schedules TBD</td>
-                    </tr>
-                    <tr>
-                        <td>6:00 PM</td>
-                        <td>Gaming Room Closes</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="2"><i>Total Time: 3 hours</i></td>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="table-container">
+                <h2 class="table-title">Schedule</h2>
+                <table>
+                    <thead>
+                        <th><b>TIME</b></th>
+                        <td><b>EVENT</b></td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>9:10 AM</td>
+                            <td>School Starts</td>
+                        </tr>
+                        <tr>
+                            <th>12:50 PM - 1:50 PM</td>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <th>3:10 PM</td>
+                            <td>Tournament Starts</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Round Schedules TBD</td>
+                        </tr>
+                        <tr>
+                            <th>6:00 PM</td>
+                            <td>Gaming Room Closes</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><i>Total Time: 3 hours</i></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </section>
     </main>
-    <!-- TODO: get the aside to work -->
-    <aside>
-        test
-    </aside>
-
-    <section id="why-come">
-        <h2>Why Come?</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Make Friends!</h3>
-                <figure>
-                    <img src="">
-                    <figcaption>interact with new people</figcaption>
-                </figure>
-            </div>
-            <div class="card">
-                <h3>Have Fun!</h3>
-                <figure>
-                    <img src="">
-                    <figcaption>interact with new people</figcaption>
-                </figure>
-            </div>
-            <div class="card">
-                <h3>Win!</h3>
-                <figure>
-                    <img src="">
-                    <figcaption>always feels good to win</figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq-section">
-        <h2>FAQ</h2>
-        <details>
-            <summary>Who can attend?</summary>
-            <p><strong>Anyone!</strong></p>
-        </details>
-        <hr>
-        <details>
-            <summary>How do I attend?</summary>
-            <p>
-                <ol>
-                    <li>sign up with the form below</li>
-                    <li>show up to room 1037 after school on the 19th</li>
-                    <li>play some games and have fun!</li>
-                </ol>
-            </p>
-        </details>
-        <hr>
-        <details>
-            <summary>How long will the event last?</summary>
-            <p>Up to 3 hours.</p>
-        </details>
-        <hr>
-        <details>
-            <summary>Is this free?</summary>
-            <p>Yes, this event is <strong>completely free</strong> to attend! Feel free to bring your friends and family, and some snacks.</p>
-        </details>
-        <hr>
-        <details>
-            <summary>Do I need to bring my own controller?</summary>
-            <p>We should have enough controllers for everyone, but you are welcome to use your own!</p>
-        </details>
-        <hr>
-        <details>
-            <summary>Are there prizes?</summary>
-            <p>No lol, this is entirely for fun, no pressure</p>
-        </details>
-        <hr>
-        <details>
-            <summary>What else is there at the event?</summary>
-            <p>
-                There are other things to do, besides playing Smash:
-                <ul>
-                    <li>computers (for gaming)</li>
-                    <li>retro arcade machines</li>
-                    <li>PlayStation and XBox (with games)</li>
-                </ul>
-            </p>
-        </details>
-        <hr>
-        <details>
-            <summary>What do I bring?</summary>
-            <p>
-                Bring:
-                <ol>
-                    <li>an ID of any kind</li>
-                    <li>snacks</li>
-                    <li>friends (to watch)</li>
-                    <li>your own controller (optional)</li>
-                </ol>
-            </p>
-            <p>
-                Don't bring:
-                <ul>
-                    <li>your own console</li>
-                    <li>any recording device</li>
-                </ul>
-            </p>
-        </details>
-        <hr>
-        <details>
-            <summary>I've never played Smash before!</summary>
-            <p>This event is <strong>entirely for fun!</strong> Even if you don't make it anywhere in the bracket, you can still have a great time!</p>
-        </details>
-    </section>
 
     <section>
-        <h2>Tournament Format</h2>
-        <p>The tournament will likely be a single-elimination bracket, with as many participants as possible! Later rounds might be best of 3 or 5, maybe double elimination.</p>
-        <!-- add iframe from challonge -->
-        <p><i>bracket will be on <a href="https://www.challonge.com">challonge.com</a> when available</i></p>
-    </section>
-
-    <section>
-        <h2>Contact Us</h2>
-        <p>If you have any questions or concerns, please reach out to us at <a href="mailto:someone@example.com">this email</a>.</p>
-        <p>The organizers:</p>
-        <ul>
-            <li>John Doe</li>
-        </ul>
-
-    <section id="signup-form">
-        <h2>Sign Up</h2>
-        <form action="submit_form.php" method="post">
-            <div class="fieldset-container">
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone"><br><br>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Contact:</legend>
-
-                    <label for="phone-contact">Phone</label>
-                    <input type="radio" id="phone-contact" name="contact" required><br>
-
-                    <label for="email-contact">Email</label>
-                    <input type="radio" id="email-contact" name="contact" required><br>
-
-                    <label for="teams-contact">Teams</label>
-                    <input type="radio" id="teams-contact" name="contact" required checked><br>
-
-                    <input type="checkbox" id="get-updates" name="updates">
-                    <label for="get-updates">receive regular updates about the tournament</label>
-                    <br><br>
-
-                    <input type="checkbox" id="give-feedback" name="updates">
-                    <label for="give-feedback">I would like to give feedback and suggestions for the tournament</label>
-                    <br><br>
-
-                    <label for="time-online">I am online</label>
-                    <select id="time-online" name="time-online">
-                        <option></option>
-                        <option>Always</option>
-                        <option>Sometimes</option>
-                        <option>Never</option>
-                    </select>
-                </fieldset>
+        <section id="why-come">
+            <h2>Why Come?</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Make Friends!</h3>
+                    <figure>
+                        <img src="images/friends.jfif" alt="friends at a smash tournament">
+                        <figcaption><i>interact with new people</i></figcaption>
+                    </figure>
+                </div>
+                <div class="card">
+                    <h3>Have Fun!</h3>
+                    <figure>
+                        <img src="images/having-fun.jfif" alt="a group of people celebrating at a tournament">
+                        <figcaption><i>if it's not fun, why bother</i></figcaption>
+                    </figure>
+                </div>
+                <div class="card">
+                    <h3>Win!</h3>
+                    <figure>
+                        <img src="images/win.jpg" alt="a photo of a team winning a tournament">
+                        <figcaption><i>always feels good to win</i></figcaption>
+                    </figure>
+                </div>
             </div>
+        </section>
 
-            <input type="submit" value="Sign Up" class="submit-button">
-        </form>
+        <section id="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>Who can attend?</summary>
+                    <p><strong><i>Anyone!</i></strong></p>
+                </details>
+                <hr>
+                <details>
+                    <summary>How do I attend?</summary>
+                    <p>
+                        <ol>
+                            <li>sign up with the form below</li>
+                            <li>show up to <strong><u>room 1037</u></strong> after school on the 19th</li>
+                            <li>play some games and have fun!</li>
+                        </ol>
+                    </p>
+                </details>
+                <hr>
+                <details>
+                    <summary>How long will the event last?</summary>
+                    <p>Up to <strong>3 hours</strong>.</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>Is this free?</summary>
+                    <p>Yes, this event is <strong>completely free</strong> to attend! Feel free to bring your friends and family, and some snacks.</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>Do I need to bring my own controller?</summary>
+                    <p>We should have enough controllers for everyone, but you are welcome to use your own!</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>Are there prizes?</summary>
+                    <p>No lol, this is entirely for fun, no pressure</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>What else is there at the event?</summary>
+                    <p>
+                        There are other things to do, besides playing Smash:
+                        <ul>
+                            <li>computers (for gaming)</li>
+                            <li>retro arcade machines</li>
+                            <li>PlayStation and XBox (with games)</li>
+                        </ul>
+                    </p>
+                </details>
+                <hr>
+                <details>
+                    <summary>What do I bring?</summary>
+                    <p>
+                        Bring:
+                        <ol>
+                            <li>an ID of any kind</li>
+                            <li>snacks</li>
+                            <li>friends (to watch)</li>
+                            <li>your own controller (optional)</li>
+                        </ol>
+                    </p>
+                    <p>
+                        Don't bring:
+                        <ul>
+                            <li>your own console</li>
+                            <li>any recording device</li>
+                        </ul>
+                    </p>
+                </details>
+                <hr>
+                <details>
+                    <summary>I've never played Smash before!</summary>
+                    <p>This event is <strong>entirely for fun!</strong> Even if you don't make it anywhere in the bracket, you can still have a great time!</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="format-section">
+            <h2>Tournament Format</h2>
+            <p>The tournament will likely be a <strong>single-elimination bracket</strong>, with as many participants as possible! Later rounds might be best of 3 or 5, maybe double elimination.</p>
+            <iframe src="https://challonge.com/Example/module" width="90%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+            <p><i>bracket will be on <a href="https://www.challonge.com" target="_blank">challonge.com</a> when available</i></p>
+        </section>
+
+        <section id="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns, please reach out to us at <a href="mailto:someone@example.com">this email</a>.</p>
+            <p><u>The organizers:</u></p>
+            <ul>
+                <li>Jane Doe (<a href="mailto:jane.doe@example.com">email</a>)</li>
+                <li>John Smith (<a href="mailto:john.smith@example.com">email</a>)</li>
+            </ul>
+        </section>
+
+        <section id="signup-form">
+            <h2>Sign Up</h2>
+            <form action="submit_form.php" method="post">
+                <div class="fieldset-container">
+                    <fieldset>
+                        <legend><u>Personal Information</u></legend>
+                        <label for="name">Name<span class="red-text">*</span></label>
+                        <input class="text-input" type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email<span class="red-text">*</span></label>
+                        <input class="text-input" type="email" id="email" name="email" required><br><br>
+
+                        <label for="phone">Phone Number<span class="red-text">*</span></label>
+                        <input class="text-input" type="tel" id="phone" name="phone"><br><br>
+
+                        <p><span class="red-text">*</span>required</p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><u>Primary Contact<span class="red-text">*</span></u></legend>
+
+                        <label for="phone-contact">Phone</label>
+                        <input type="radio" id="phone-contact" name="contact" required><br>
+
+                        <label for="email-contact">Email</label>
+                        <input type="radio" id="email-contact" name="contact" required><br>
+
+                        <label for="teams-contact">Teams</label>
+                        <input type="radio" id="teams-contact" name="contact" required checked><br>
+
+                        <input type="checkbox" id="get-updates" name="updates">
+                        <label for="get-updates">I would like to receive regular updates about the tournament</label>
+                        <br><br>
+
+                        <input type="checkbox" id="give-feedback" name="updates">
+                        <label for="give-feedback">I would like to give feedback and suggestions for the tournament</label>
+                        <br><br>
+
+                        <label for="time-online">I am online</label>
+                        <select class="text-input" id="time-online" name="time-online" required>
+                            <option value="">select one...</option>
+                            <option>always</option>
+                            <option>sometimes</option>
+                            <option>never</option>
+                        </select>
+                        <span class="red-text">*</span>
+                    </fieldset>
+                </div>
+
+                <input type="submit" value="Sign Up" class="submit-button">
+            </form>
+        </section>
     </section>
 
     <footer>
+        <address>
+            <b>Handsworth Secondary School</b><br>
+            1033 Handsworth Road<br>
+            North Vancouver<br>
+            BC, V7R 2A7<br>
+            <a href="tel:+16049033600">Phone: 604.903.3600</a><br>
+            <a href="mailto:handsworth@sd44.ca">Email: handsworth@sd44.ca</a>
+        </address>
+
+        <nav class="sitemap">
+            <p class="sitemap-title"><b><u>Sitemap</u></b></p>
+            <ul>
+                <li><a href="#main-section">Schedule</a></li>
+                <li><a href="#faq-section">FAQ</a></li>
+                <li><a href="#format-section">Format</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#signup-form">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <p style="font-size: 0.9em;">©No Copyright ● <a href="https://www.youtube.com/watch?v=Yb6dZ1IFlKc" style="color: #e2e2e2">Terms</a></p>
 
     </footer>
 </body>

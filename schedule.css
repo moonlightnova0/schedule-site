@@ -44,23 +44,27 @@ header {
     font-size: 1.4em;
 }
 
-.navbar li {
+.navbar li:not(.logo) {
     float: left;
     padding: 15px;
     height: 100%;
 }
 
-.navbar li a {
+.logo {
+    padding-right: 12px;
+}
+
+nav a {
     text-decoration: none;
     color:white;
 }
 
-.navbar li:hover {
+.navbar li:not(.logo):hover {
     border-radius: 0;
     background-color: rgb(255, 124, 152);    
 }
 
-h2 {
+h2:not(.table-title) {
     margin-left: 20px;
 }
 
@@ -69,22 +73,37 @@ strong {
 }
 
 #main-section {
-    background-color: grey;
+    /* background-color: grey; */
     color: white;
     padding: 15px 0px;
+    background-image: url("/images/tournament-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.table-container {
+    margin: 2%;
+    padding: 2% 3% 3% 3%;
+    background-color: rgba(93,93,93,0.8)
 }
 
 table {
-    margin: 5%;
-    width: 90%;
+    margin-top: 13px;
+    width: 100%;
     border-collapse: collapse; /* Merges adjacent cell borders and removes gaps */
     border-spacing: 0;         /* Ensures zero space between cells */
+    font-family: "Oswald";
 }
 
 th, td {
-    border: 3px solid black;
+    border: 2px solid rgb(216, 216, 216);
     text-align: center;
     height: 32px;
+}
+
+th {
+    font-weight: normal;
 }
 
 thead {
@@ -102,8 +121,8 @@ section {
 #why-come {
     background-color: rgb(49, 0, 0);
     color: white;
-    padding: 15px;
     box-sizing: border-box;
+    padding-top: 15px;
     flex: 0 0 40%;
 }
 
@@ -114,7 +133,7 @@ h3 {
 }
 .card-container {
     display: flex;
-    margin: 15px;
+    margin: 15px 25px;
 }
 
 .card {
@@ -124,6 +143,16 @@ h3 {
     color: white;
     margin: 6px;
     padding: 7px;
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%;
+    margin: 12px 0px 2px;
+}
+
+figcaption {
+    font-style: italic;
 }
 
 #faq-section {
@@ -152,10 +181,33 @@ details p {
     margin: 10px;
 }
 
+#format-section {
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+iframe {
+    padding-left: 40px;
+}
+
+#contact-section {
+    padding: 15px 0px;
+    color: white;
+    background-color: rgb(32, 1, 10);
+}
+
+:is(#contact-section, #faq-section) :is(ul, ol) {
+    padding-left: 50px;
+}
+
 #signup-form {
     background-color: rgb(61, 3, 3);
     padding: 15px 0px;
     color: white;    
+}
+
+:is(#contact-section, #format-section) p {
+    padding: 7px 20px;
 }
 
 .fieldset-container {
@@ -183,6 +235,15 @@ fieldset legend {
     margin-top: auto
 }
 
+.text-input {
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 6px;
+    padding: 3px;
+    color: white;
+    margin-left: 2px;
+}
+
 .submit-button {
     margin-left: 15px;
     border: none;
@@ -196,4 +257,47 @@ fieldset legend {
 .submit-button:hover {
     cursor: pointer;
     background-color: rgb(50,23,25);
+}
+
+.red-text {
+    color: #fe4f4f;
+}
+
+footer {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #1a0101;
+    color: #e2e2e2;
+    justify-content: space-between;
+    place-items: end;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.sitemap {
+    line-height: 1.5;
+}
+
+.sitemap-title {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.sitemap a:hover {
+    color: #c3c3c3;
+}
+
+address {
+    font-style: normal;
+    font-size: 0.9em;
+}
+
+address a {
+    color: #e2e2e2;
+    text-decoration: none;
 }
