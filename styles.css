@@ -7,6 +7,8 @@ body {
     font-family: Lato;
 }
 
+/* header (navbar) */
+
 header {
     width: 410px;
     background-color: rgb(168, 26, 57);
@@ -18,21 +20,7 @@ header {
     font-family: "Oregano";
 }
 
-.top-banner {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.title-container {
-    width: max(400px, 50%);
-    padding: 50px 15px 20px;
-    background-image: linear-gradient(45deg, rgb(105, 32, 54), rgb(156, 68, 90));
-    place-content: end;
-    color: white;
-}
-
-.navbar{
+.navbar {
     list-style-type: none;
     display: flex;        
     flex-direction: row;   
@@ -50,10 +38,6 @@ header {
     height: 100%;
 }
 
-.logo {
-    padding-right: 12px;
-}
-
 nav a {
     text-decoration: none;
     color:white;
@@ -63,6 +47,7 @@ nav a {
     /* why do i have to do this */
     display: flex; 
     align-items: center;
+    padding-right: 12px;
 }
 
 .navbar li:not(.logo):hover {
@@ -78,11 +63,29 @@ strong {
     font-weight: normal;
 }
 
+/* top section */
+
+.top-banner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-container {
+    width: max(400px, 50%);
+    padding: 50px 15px 20px;
+    background-image: linear-gradient(45deg, rgb(105, 32, 54), rgb(156, 68, 90));
+    place-content: end;
+    color: white;
+}
+
+
+/* main table section */
+
 #main-section {
-    /* background-color: grey; */
     color: white;
     padding: 15px 0px;
-    background-image: url("/images/tournament-bg.webp");
+    background-image: url("images/tournament-bg.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,8 +100,8 @@ strong {
 table {
     margin-top: 13px;
     width: 100%;
-    border-collapse: collapse; /* Merges adjacent cell borders and removes gaps */
-    border-spacing: 0;         /* Ensures zero space between cells */
+    border-collapse: collapse;
+    border-spacing: 0;
     font-family: "Oswald";
 }
 
@@ -123,6 +126,8 @@ tfoot {
 section {
   display: flow-root;
 }
+
+/* 'why come' section */
 
 #why-come {
     background-color: rgb(49, 0, 0);
@@ -161,6 +166,8 @@ figcaption {
     font-style: italic;
 }
 
+/* faq section */
+
 #faq-section {
     background-image: linear-gradient(rgb(110, 15, 15),rgb(130,23,23));
     padding: 15px 0px;
@@ -187,9 +194,17 @@ details p {
     margin: 10px;
 }
 
+blockquote {
+    margin-left: 30px;
+    border-left: 2px solid white;
+}
+
+/* tourney format section */
+
 #format-section {
     background-color: rgb(58, 58, 58);
     color: white;
+    padding-top: 10px;
 }
 
 iframe {
@@ -205,6 +220,8 @@ iframe {
 :is(#contact-section, #faq-section) :is(ul, ol) {
     padding-left: 50px;
 }
+
+/* signup form */
 
 #signup-form {
     background-color: rgb(61, 3, 3);
@@ -233,8 +250,8 @@ fieldset legend {
     float: left;
     width: 100%;
     padding: 0;
-    margin-bottom: 12px; /* Adds space between the legend and your first input */
-    font-weight: bold;   /* Optional: helps the title stand out inside the box */
+    margin-bottom: 12px;
+    font-weight: bold;
 }
 
 #get-updates {
@@ -268,6 +285,8 @@ fieldset legend {
 .red-text {
     color: #fe4f4f;
 }
+
+/* footer */
 
 footer {
     padding: 20px;
